@@ -14,8 +14,8 @@ function App() {
     <div className="App">
      <Router>
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/movies/:id" component={MovieDetail} />
+    <Route path="/" element={<Home/>} />
+      <Route path="/movies/:id" element={<MovieDetail/>} />
       </Routes>
       </Router>
     </div>

@@ -18,11 +18,13 @@ const Detail = () => {
       })
       .then((response) => {
         setMovieDetails(response.data);
-        setLoading(true);
+        setLoading(false);
+        console.log("yes")
       })
       .catch((error) => {
         console.error('Error fetching movie details:', error);
         setLoading(false);
+        console.log("no")
       });
   }, [id]);
 
@@ -32,14 +34,10 @@ const Detail = () => {
         <p>Loading...</p>
       ) : (
         <div>
-            {movieDetails.map((movie) => (
-               <div key={movie.id}>
-               <h2>{movie.title}</h2>
-               <p>Release Date: {movie.release_date}</p>
-               <p>Runtime: {movie.runtime} minutes</p>
-               <p>Overview: {movie.overview}</p>
-               </div>  
-            ))}
+            <h2 data-testid="movie-title">{movieDetails.title}</h2>
+          <p data-testid="movie-release-date">{movieDetails.release_date}</p>
+          <p data-testid="movie-runtime">{movieDetails.runtime} minutes</p>
+          <p data-testid="movie-overview">{movieDetails.overview}</p>
         </div>
       )}
     </div>
