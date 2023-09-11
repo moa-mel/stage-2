@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import './styles.css'
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import MCDetail from '../MCDetail';
 
 const Detail = () => {
     const { id } = useParams();
@@ -34,7 +33,12 @@ const Detail = () => {
       ) : (
         <div>
             {movieDetails.map((movie) => (
-                <MCDetail key={movie.id} movie={movie}/>
+               <div key={movie.id}>
+               <h2>{movie.title}</h2>
+               <p>Release Date: {movie.release_date}</p>
+               <p>Runtime: {movie.runtime} minutes</p>
+               <p>Overview: {movie.overview}</p>
+               </div>  
             ))}
         </div>
       )}
