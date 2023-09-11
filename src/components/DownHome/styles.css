@@ -1,0 +1,26 @@
+.downHome{
+    background-color: #fff;
+}
+.dh-container{
+    max-width: 1150px;
+    margin: auto;
+}
+.dh-h{
+ display: flex;
+ justify-content: space-between;
+}
+.dh-h3{
+    color: #000;
+}
+.dh-l{
+    display: flex;
+    column-gap: 15px;
+}
+.dh-p{
+  color: red;
+}
+.dhl-img{
+    margin-top: 15px;
+  width: 20px;
+  height: 25px;
+}
