@@ -4,3 +4,8 @@
 .g21{
     height: 640px;
 }
+@media screen and (max-width: 768px) {
+    .side{
+        display: none;
+    }
+}

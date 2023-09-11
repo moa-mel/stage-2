@@ -39,3 +39,44 @@ a{
 .g521{
     width: 90%;
 }
+.mdupo{
+    display: flex;
+    column-gap: 15px;
+}
+@media screen and (max-width: 768px) {
+    .det-trailer{
+        width: 100px;
+    }
+    iframe{
+        width: 320px;
+    }
+    .md-top{
+        display: flex;
+        column-gap: 2px;
+        font-size: 0.4rem;
+    }
+    .mdh2{
+        font-size: 0.4rem;
+    }
+    .mdp{
+        font-size: 0.4rem;
+    }
+    .mdh21{
+        font-size: 0.4rem;
+    }
+    .mdbut{
+        font-size: 0.4rem;
+        font-weight: 200;
+    }
+    .dt-down{
+        flex-direction: column;
+    }
+    .mdbut{
+        width: 40%;
+        font-size: 10px;
+        margin-left: 20px;
+    }
+    .mdupo{
+        flex-direction: column; 
+    }
+}

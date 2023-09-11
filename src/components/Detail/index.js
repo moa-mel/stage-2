@@ -121,11 +121,13 @@ const Detail = () => {
             <p>Loading...</p>
           ) : (
             <div>
+              <div className='mdupo'>
               <div className='md-top'>
-                <h2 data-testid="movie-title">{movieDetails.title}.</h2>
-                <h2 data-testid="movie-release-date">{movieDetails.release_date}.</h2>
-                <h2 data-testid="movie-runtime">{movieDetails.runtime} minutes</h2>
-                <button>{movieDetails.genres.map((genre) => genre.name).join(', ')}</button>
+                <h2 className='mdh2' data-testid="movie-title">{movieDetails.title}.</h2>
+                <h2 className='mdp' data-testid="movie-release-date">{movieDetails.release_date}.</h2>
+                <h2 className='mdh21' data-testid="movie-runtime">{movieDetails.runtime} minutes</h2>   
+              </div>
+              <button className='mdbut'>{movieDetails.genres.map((genre) => genre.name).join(', ')}</button>
               </div>
               <p data-testid="movie-overview">{movieDetails.overview}</p>
             </div>

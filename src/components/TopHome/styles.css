@@ -1,87 +1,170 @@
-.topHome{
+.topHome {
     background-image: url("../../images/Poster.png");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100% ;
+    background-size: 100%;
     height: 100vh;
 }
-.th-container{
+
+.th-container {
     max-width: 1150px;
     margin: auto;
 }
-.th-header{
+
+.th-header {
     display: flex;
     justify-content: space-between;
 }
-.th-h1{
- display: flex;
- column-gap: 10px;
+
+.th-h1 {
+    display: flex;
+    column-gap: 10px;
 }
-.thh1-img{
+
+.thh1-img {
     margin-top: 10px;
     width: 25%;
     height: 70%;
 }
-.th-h2{
+
+.th-h2 {
     margin-top: 12px;
     display: flex;
     height: 2rem;
     width: 40%;
-    margin-right: 135px ;
+    margin-right: 135px;
     padding: 0.2rem 0.3rem;
     font-size: small;
-	/*background-color: #F1F6FF; */
-    border:1.5px solid #fff;
+    /*background-color: #F1F6FF; */
+    border: 1.5px solid #fff;
     border-radius: 11px;
 }
-.navbar-input{
+
+.navbar-input {
     outline: none;
     background-color: transparent;
     border: hidden;
     height: 2rem;
     color: #000;
     width: 90%;
-    margin-right: 38px ;
+    margin-right: 38px;
     margin-bottom: 1.5rem;
     padding: 0.2rem 1.0rem;
 }
-::placeholder { 
+
+::placeholder {
     color: #fff;
-    opacity: 1; 
-  }
-.th-h2 img{
-   /* font-size: 20px; */
-	color: #fff;
+    opacity: 1;
+}
+
+.th-h2 img {
+    /* font-size: 20px; */
+    color: #fff;
     right: 12vh;
     padding-top: -4.5rem;
 }
-.thh2-img{
+
+.thh2-img {
     margin-top: 15px;
     width: 2%;
     height: 45%;
 }
-.th-h3{
+
+.th-h3 {
     display: flex;
     column-gap: 20px;
 }
-.thh-p{
+
+.thh-p {
     color: #fff;
 }
-.thh-p1{
+
+.thh-p1 {
     color: #fff;
     margin-left: -10px;
 }
-.thh3-img{
+
+.thh3-img {
     margin-top: 10px;
     width: 32%;
     height: 70%;
 }
-.thm-h1{
+
+.thm-h1 {
     margin-top: 95px;
     color: #fff;
     font-size: 2.6rem;
 }
-.thm-p{
+
+.thm-p {
     color: #fff;
     font-size: 1.0rem;
+}
+
+@media screen and (max-width: 768px) {
+    .topHome {
+        background-image: url("../../images/Poster.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 50vh;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    .th-h1 {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    .thh1-img {
+        margin-top: 15px;
+        margin-left: 10px;
+        width: 28%;
+        height: 45%;
+    }
+
+    .th-h2 {
+        margin-left: 48px;
+        width: 40%;
+        height: 1.2rem;
+    }
+
+    .th-h3 {
+        display: flex;
+        column-gap: 3px;
+    }
+
+    .thh-p1 {
+        margin-left: -100px;
+    }
+
+    .thh3-img {
+        margin-top: 15px;
+        width:18%;
+        height: 15%;
+        margin-left: -40px;
+    }
+
+    .thm-h1 {
+        margin-top: 45px;
+        font-size: 1.0rem;
+    }
+
+    .thm-img {
+        width: 35%;
+        height: 35%;
+    }
+
+    .thm-p {
+        font-size: 0.9rem;
+    }
+
+    .thm-img2 {
+        margin-top: 5px;
+        width: 35%;
+        height: 35%;
+        margin-bottom: 55px;
+    }
 }

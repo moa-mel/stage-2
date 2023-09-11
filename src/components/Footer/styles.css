@@ -28,3 +28,16 @@ color: #111827;
 .f-three p{
     color: #6B7280;
 }
+@media screen and (max-width: 768px) {
+    .f-container{
+       margin-left: 3px;
+    }
+    .f-two p{
+        font-size: 11px; 
+        margin-left: 5px;
+    }
+    .f-three p{
+        font-size: 13px;
+        margin-left: 18px;
+    }
+}
