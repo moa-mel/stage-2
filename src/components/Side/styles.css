@@ -1,13 +1,6 @@
 .side{
     flex: 1;
-    border-right: 2px solid #000;
-    border: 16px;
 }
-.sidep{
-display: flex;
-column-gap: 20px;
-}
-.sided{
-    display: flex;
-    column-gap: 20px;
+.g21{
+    height: 640px;
 }

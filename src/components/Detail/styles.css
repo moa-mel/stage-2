@@ -1,3 +1,41 @@
 .detail{
     flex: 3;
 }
+.det-trailer{
+    margin-top: 20px;
+}
+.dt-down{
+  display: flex;
+}
+.dd-one{
+  flex: 2.5;
+}
+.dd-two{
+   flex: 1.5;
+}
+.ddt-img{
+  width: 75%;
+}
+.ddt-img1{
+    margin-top: 20px;
+    width: 75%;
+}
+.md-top{
+    display: flex;
+    column-gap: 10px;
+}
+.md-top h2{
+   font-size: 0.9rem;
+}
+button{
+    border-radius: 15px;
+    color: #B91C1C;
+    padding: 7px 24px;
+    border: 1px solid #fff;
+}
+a{
+    color: #B91C1C;
+}
+.g521{
+    width: 90%;
+}

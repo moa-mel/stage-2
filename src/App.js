@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import './App.css';
 import {
   Route,
@@ -10,6 +10,18 @@ import MovieDetail from "./pages/MovieDetail";
 
 
 function App() {
+  const [favoriteMovies, setFavoriteMovies] = useState([]);
+  function toggleFavorite(movie) {
+    const isFavorite = favoriteMovies.some((favMovie) => favMovie.id === movie.id);
+    if (isFavorite) {
+      // Remove from favorites
+      const updatedFavorites = favoriteMovies.filter((favMovie) => favMovie.id !== movie.id);
+      setFavoriteMovies(updatedFavorites);
+    } else {
+      // Add to favorites
+      setFavoriteMovies([...favoriteMovies, movie]);
+    }
+  }
   return (
     <div className="App">
      <Router>

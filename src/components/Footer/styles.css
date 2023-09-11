@@ -1,0 +1,30 @@
+.footer{
+    margin-top: 10px;
+    background-color: #fff;
+}
+.f-container{
+    max-width: 1000px;
+    margin: auto;
+}
+.f-one{
+    display: flex;
+    column-gap: 22px;
+    max-width: 210px;
+    margin: auto;
+}
+.f-two{
+   display: flex;
+   column-gap: 32px;
+   max-width: 450px;
+    margin: auto;
+}
+.f-two p{
+color: #111827;
+}
+.f-three{
+    max-width: 350px;
+    margin: auto;
+}
+.f-three p{
+    color: #6B7280;
+}

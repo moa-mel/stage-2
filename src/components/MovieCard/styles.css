@@ -22,12 +22,48 @@
 }
 .card-info {
     color: #000;
+    margin-top: -3px;
 }
 .card-info h3{
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 400;
     margin-bottom: 10px;
+    text-decoration: none;
+    margin-top: -3px;
+}
+.card-info p{
+    margin-top: 3px;
 }
 .card-bottom{
     padding: 20px;
+    margin-top: -3px;
+}
+.urh{
+    display: flex;
+    column-gap: 10px;
+}
+.ert{
+    display: flex;
+    column-gap: 70px;
+}
+.vil{
+   display: flex;
+   column-gap: 10px;
+}
+.liv{
+    display: flex;
+    column-gap: 10px;
+}
+.mv-img{
+    margin-top: 5px;
+    width: 15px;
+    height: 20px;
+}
+.mv-link{
+    text-decoration: none;
+}
+.mc-f{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }

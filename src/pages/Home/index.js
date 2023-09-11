@@ -2,6 +2,7 @@ import React from 'react'
 import "./styles.css"
 import TopHome from '../../components/TopHome'
 import DownHome from '../../components/DownHome'
+import Footer from '../../components/Footer'
 
 const Home = () => {
   return (
@@ -11,6 +12,8 @@ const Home = () => {
             <TopHome/>
             {/*downHome*/}
             <DownHome/>
+            {/*footer*/}
+            <Footer/>
         </div>
 
     </div>
