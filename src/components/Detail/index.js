@@ -98,13 +98,13 @@ const Detail = () => {
       });
   }, [id]);
 
- /* const formattedReleaseDate = new Date(movieDetails.release_date).toUTCString(); */
- const releaseDate = new Date(movieDetails.release_date);
+ const formattedReleaseDate = new Date(movieDetails.release_date).toUTCString(); 
+ /*const releaseDate = new Date(movieDetails.release_date);
  const releaseYear = releaseDate.getUTCFullYear();
   const releaseMonth = (releaseDate.getUTCMonth() + 1).toString().padStart(2, '0'); // Months are zero-indexed
   const releaseDay = releaseDate.getUTCDate().toString().padStart(2, '0');
 
- const formattedReleaseDate = `${releaseYear}-${releaseMonth}-${releaseDay}`;
+ const formattedReleaseDate = `${releaseYear}-${releaseMonth}-${releaseDay}`; */
 
 
   return (

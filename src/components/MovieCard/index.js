@@ -49,13 +49,13 @@ const MovieCard = ({ movie }) => {
   const ratingPercentage = movieDetails.vote_average * 10;
   const countryName = movieDetails.production_countries?.[0]?.name || 'Not available';
   const countryAbbreviation = countryAbbreviations[countryName] || countryName;
-/* const formattedReleaseDate = new Date(movieDetails.release_date).toUTCString(); */
-const releaseDate = new Date(movieDetails.release_date);
+ const formattedReleaseDate = new Date(movieDetails.release_date).toUTCString(); 
+/*const releaseDate = new Date(movieDetails.release_date);
 const releaseYear = releaseDate.getUTCFullYear();
  const releaseMonth = (releaseDate.getUTCMonth() + 1).toString().padStart(2, '0'); // Months are zero-indexed
  const releaseDay = releaseDate.getUTCDate().toString().padStart(2, '0');
 
-const formattedReleaseDate = `${releaseYear}-${releaseMonth}-${releaseDay}`;
+const formattedReleaseDate = `${releaseYear}-${releaseMonth}-${releaseDay}`; */
 
   return (
     <div className="movie-card" data-testid="movie-card">
