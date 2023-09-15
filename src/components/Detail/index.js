@@ -98,13 +98,13 @@ const Detail = () => {
       });
   }, [id]);
 
- const formattedReleaseDate = new Date(movieDetails.release_date).toUTCString(); 
- /*const releaseDate = new Date(movieDetails.release_date);
+/* const formattedReleaseDate = new Date(movieDetails.release_date).toUTCString(); */
+ const releaseDate = new Date(movieDetails.release_date);
  const releaseYear = releaseDate.getUTCFullYear();
   const releaseMonth = (releaseDate.getUTCMonth() + 1).toString().padStart(2, '0'); // Months are zero-indexed
   const releaseDay = releaseDate.getUTCDate().toString().padStart(2, '0');
 
- const formattedReleaseDate = `${releaseYear}-${releaseMonth}-${releaseDay}`; */
+ const formattedReleaseDate = `${releaseYear}-${releaseMonth}-${releaseDay}`; 
 
 
   return (
@@ -141,9 +141,9 @@ const Detail = () => {
             </div>
           )}
           <br/>
-          <p>Director: <a>{director}</a></p>
-          <p>Writers: <a>{writers.join(', ')}</a></p>
-          <p>Stars: <a>{stars.join(', ')}</a></p>
+          <p>Director: <a href='!#'>{director}</a></p>
+          <p>Writers: <a href='!#'>{writers.join(', ')}</a></p>
+          <p>Stars: <a href='!#'>{stars.join(', ')}</a></p>
           <img src={G521} alt='' className='g521'/>
         </div>
         <div className='dd-two'>
